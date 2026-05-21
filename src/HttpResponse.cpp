@@ -51,6 +51,10 @@ void HttpResponse::setBody(const char* data,size_t length)
 string HttpResponse::getMimeType(const string& filepath)
 {
     size_t pos = filepath.rfind('.');
+    if(pos == string::npos)
+    {
+        return "application/octet-stream";
+    }
     string ext = filepath.substr(pos+1);
     if (ext == "html" || ext == "htm")
     {

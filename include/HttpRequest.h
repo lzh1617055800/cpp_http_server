@@ -17,12 +17,12 @@ public:
     HttpRequest():method(Method::UNKNOWN),version(Version::UNKNOWN){};
     bool parse(const string& data);
     Method getMethod()const{return method;}
-    Version getVerison()const{return version;}
+    Version getVersion()const{return version;}
     const string& getPath()const{return path;}  
     const string& getHeader(const string& key)const;
     const string& getBody()const{return body;}
 private:
-    bool parseRequsetLine(const string& line);
+    bool parseRequestLine(const string& line);
     bool parseHeader(const string& line);
     Method method;
     string path;

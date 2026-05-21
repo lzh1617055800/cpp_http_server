@@ -1,3 +1,0 @@
-/home/lzh/Desktop/cpp_http_server/CMakeFiles/rebuild_cache.dir
-/home/lzh/Desktop/cpp_http_server/CMakeFiles/edit_cache.dir
-/home/lzh/Desktop/cpp_http_server/CMakeFiles/http_sever.dir
